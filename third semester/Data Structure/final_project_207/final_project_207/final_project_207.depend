@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1644389388 source:c:\users\maria\desktop\university\data structure\final_project_207\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<queue>
+	<sstream>
+	<vector>
+	<algorithm>
+	<ios>
+	<limits>
+	<graphics.h>
+

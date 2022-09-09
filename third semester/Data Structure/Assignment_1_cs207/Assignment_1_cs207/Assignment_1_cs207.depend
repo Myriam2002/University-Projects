@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1637951870 source:c:\users\maria\desktop\university\data structure\assignment_1_cs207\main.cpp
+	<iostream>
+	<string>
+	<algorithm>
+
