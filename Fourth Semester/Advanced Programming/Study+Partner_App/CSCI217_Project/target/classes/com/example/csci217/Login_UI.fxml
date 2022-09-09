@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Group xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csci217.LoginController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="409.0" layoutX="192.0" stroke="BLACK" strokeType="INSIDE" width="409.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="419.0" layoutX="-8.0" layoutY="-10.0" stroke="BLACK" strokeType="INSIDE" width="209.0" />
+            <Label layoutX="242.0" layoutY="37.0" text="Welcome to your Study Partner" textFill="#ceb27c">
+               <font>
+                  <Font name="Bell MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="228.0" layoutY="131.0" text="Username" textFill="#ceb27c">
+               <font>
+                  <Font name="Bell MT" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="login_username_field" layoutX="225.0" layoutY="158.0" prefHeight="25.0" prefWidth="356.0" />
+            <Label layoutX="228.0" layoutY="232.0" text="Password" textFill="#ceb27c">
+               <font>
+                  <Font name="Bell MT" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="login_signup_btn" layoutX="238.0" layoutY="344.0" mnemonicParsing="false" onAction="#open_signup_scene" prefHeight="25.0" prefWidth="123.0" text="Sign up">
+               <font>
+                  <Font name="Bell MT" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="login_login_btn" layoutX="451.0" layoutY="344.0" mnemonicParsing="false" onAction="#signInOnClick" prefHeight="25.0" prefWidth="123.0" text="Login">
+               <font>
+                  <Font name="Bell MT" size="13.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="login_password_field" layoutX="226.0" layoutY="264.0" prefHeight="25.0" prefWidth="356.0" />
+            <Polygon layoutX="110.0" layoutY="141.0" points="-165.99998474121094, 68.99998474121094, 99.99998474121094, 257.0000305175781, 72.00003051757812, -165.6666717529297" stroke="#ceb27c" strokeType="INSIDE" />
+            <Polygon layoutX="120.0" layoutY="151.0" points="-144.66665649414062, 52.99998474121094, 71.99996948242188, 205.66668701171875, 50.000030517578125, -138.33334350585938" stroke="#ceb27c" strokeType="INSIDE" />
+            <Circle layoutX="90.0" layoutY="310.0" radius="61.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7982456088066101" green="0.604227602481842" blue="0.2439083755016327" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle fill="#040404" layoutX="108.0" layoutY="331.0" radius="48.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle layoutX="86.0" layoutY="91.0" radius="24.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8508771657943726" green="0.6937012672424316" blue="0.4018031060695648" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle fill="#040404" layoutX="95.0" layoutY="97.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle layoutX="182.0" layoutY="180.0" radius="24.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7631579041481018" green="0.5718973278999329" blue="0.21669915318489075" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle fill="#040404" layoutX="175.0" layoutY="183.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</Group>

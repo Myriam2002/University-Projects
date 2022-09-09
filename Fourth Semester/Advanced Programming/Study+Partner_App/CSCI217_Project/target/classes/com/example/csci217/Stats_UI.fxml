@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csci217.StatsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="469.0" layoutX="-32.0" layoutY="-44.0" stroke="BLACK" strokeType="INSIDE" width="668.0" />
+      <BarChart fx:id="stats_graph" layoutX="14.0" layoutY="60.0" prefHeight="295.0" prefWidth="411.0" title="Study Time">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="stats_return_btn" layoutX="448.0" layoutY="357.0" mnemonicParsing="false" onAction="#stats_return_to_timer" prefHeight="25.0" prefWidth="135.0" text="Return">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="241.0" layoutY="14.0" text="Your Statistics " textFill="#ceb27c">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="70.0" layoutX="426.0" layoutY="150.0" stroke="#ceb27c" strokeType="INSIDE" width="159.0" />
+      <Label layoutX="434.0" layoutY="164.0" text="Total Amount of Work " textFill="#ceb27c">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="stats_totalwork" layoutX="484.0" layoutY="191.0" prefHeight="17.0" prefWidth="63.0" text="0 min" textFill="#ceb27c">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Circle layoutX="512.0" layoutY="49.0" radius="35.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.780701756477356" green="0.6263685822486877" blue="0.33974984288215637" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="503.0" layoutY="60.0" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="498.0" layoutY="291.0" radius="35.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.780701756477356" green="0.6263685822486877" blue="0.33974984288215637" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="507.0" layoutY="283.0" radius="35.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

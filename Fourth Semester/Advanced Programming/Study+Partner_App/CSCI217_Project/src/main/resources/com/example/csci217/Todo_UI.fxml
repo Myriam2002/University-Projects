@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csci217.TodoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="478.0" layoutX="-32.0" layoutY="-45.0" stroke="BLACK" strokeType="INSIDE" width="665.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cfb379" height="255.0" layoutX="14.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="177.0" />
+      <Label layoutX="245.0" layoutY="6.0" text="To-Do List" textFill="#ceb27c">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="todo_return_btn" layoutX="162.0" layoutY="345.0" mnemonicParsing="false" onAction="#todo_return_to_timer" prefHeight="25.0" prefWidth="87.0" text="Return">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cfb379" height="255.0" layoutX="212.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="177.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cfb379" height="255.0" layoutX="409.0" layoutY="57.0" stroke="BLACK" strokeType="INSIDE" width="177.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="47.0" layoutX="14.0" layoutY="57.0" stroke="#ceb27c" strokeType="INSIDE" width="177.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="47.0" layoutX="212.0" layoutY="57.0" stroke="#ceb27c" strokeType="INSIDE" width="177.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="47.0" layoutX="409.0" layoutY="57.0" stroke="#ceb27c" strokeType="INSIDE" width="177.0" />
+      <Label layoutX="84.0" layoutY="71.0" text="Today" textFill="#ceb27c">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="71.0" text="Tomorrow" textFill="#ceb27c">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="477.0" layoutY="71.0" text="Others" textFill="#ceb27c">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkbox_1_1" layoutX="31.0" layoutY="128.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="30.0" />
+      <CheckBox fx:id="checkbox_1_2" layoutX="31.0" layoutY="155.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkbox_1_3" layoutX="30.0" layoutY="185.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkbox_1_4" layoutX="31.0" layoutY="212.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkbox_1_5" layoutX="31.0" layoutY="240.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkbox_2_1" layoutX="231.0" layoutY="128.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkbox_2_2" layoutX="231.0" layoutY="155.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkbox_2_3" layoutX="231.0" layoutY="185.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkbox_2_4" layoutX="231.0" layoutY="212.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkbox_2_5" layoutX="231.0" layoutY="240.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkbox_3_1" layoutX="425.0" layoutY="128.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkbox_3_2" layoutX="425.0" layoutY="155.0" mnemonicParsing="false" />
+      <Circle layoutX="94.0" layoutY="348.0" radius="30.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8684210777282715" green="0.7108187079429626" blue="0.4181286692619324" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <CheckBox fx:id="checkbox_3_3" layoutX="425.0" layoutY="185.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkbox_3_4" layoutX="425.0" layoutY="212.0" mnemonicParsing="false" />
+      <CheckBox fx:id="checkbox_3_5" layoutX="425.0" layoutY="240.0" mnemonicParsing="false" />
+      <Circle layoutX="104.0" layoutY="358.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="530.0" layoutY="48.0" radius="23.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8947368264198303" green="0.6994964480400085" blue="0.3369070887565613" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="517.0" layoutY="48.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+      <TextField fx:id="tx1_1" layoutX="50.0" layoutY="124.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx1_2" layoutX="50.0" layoutY="151.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx1_3" layoutX="50.0" layoutY="181.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx1_4" layoutX="50.0" layoutY="208.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx1_5" layoutX="50.0" layoutY="236.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx2_1" layoutX="256.0" layoutY="126.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx2_2" layoutX="256.0" layoutY="153.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx2_3" layoutX="256.0" layoutY="183.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx2_4" layoutX="256.0" layoutY="210.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx2_5" layoutX="256.0" layoutY="238.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx3_1" layoutX="451.0" layoutY="125.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx3_2" layoutX="451.0" layoutY="152.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx3_3" layoutX="451.0" layoutY="182.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx3_4" layoutX="451.0" layoutY="209.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="tx3_5" layoutX="451.0" layoutY="237.0" prefHeight="25.0" prefWidth="112.0" />
+      <Button fx:id="save_todo" layoutX="374.0" layoutY="345.0" mnemonicParsing="false" onAction="#saving_todo" prefHeight="25.0" prefWidth="87.0" text="Save">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="reload_todo" layoutX="268.0" layoutY="345.0" mnemonicParsing="false" onAction="#reloading_todo" prefHeight="25.0" prefWidth="87.0" text="Reload">
+         <font>
+            <Font name="Bell MT" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
